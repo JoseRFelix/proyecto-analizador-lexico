@@ -32,6 +32,6 @@ while {lexeme=yytext(); return RESERVADAS;}
 {RESTA} {return RESTA;}
 {MULTIPLICACION} {return MULTIPLICACION;}
 {DIVISION} {return DIVISION;}
-("(-"{D}+")")|{D}+ {lexeme=yytext(); return NUMERO;}
+("(-"{D}+")")|{D}+ {lexeme=yytext(); return DIGITO;}
 
  . {return ERROR;}
