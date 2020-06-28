@@ -6,7 +6,7 @@ public enum Tokens {
     RESTA,
     MULTIPLICACION,
     DIVISION,
-    NUMERO,
+    DIGITO,
     ERROR,
     RESERVADAS,
     NEWLINE
