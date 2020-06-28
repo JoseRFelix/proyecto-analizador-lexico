@@ -6,13 +6,15 @@ import static com.proyectojflex.Tokens.*;
 %class Lexer
 %type Tokens
 D=[0-9]+
-SUMA=[\+]{1}
-RESTA=[\-]{1}
-IGUAL=[\=]{1}
-MULTIPLICACION=[\*]{1}
-DIVISION=[\/]{1}
+SUMA=[\+]
+RESTA=[\-]
+IGUAL=[\=]
+MULTIPLICACION=[\*]
+PARENTESIS=[\(\)]
+DIVISION=[\/]
 ESPACIO=[ ,\t,\r]+
 NEWLINE=[\n]+
+POTENCIA=[\^]
 
 %{
     public String lexeme;
@@ -32,6 +34,8 @@ while {lexeme=yytext(); return RESERVADAS;}
 {RESTA} {return RESTA;}
 {MULTIPLICACION} {return MULTIPLICACION;}
 {DIVISION} {return DIVISION;}
+{PARENTESIS} {return PARENTESIS;}
+{POTENCIA} {return POTENCIA;}
 ("(-"{D}+")")|{D}+ {lexeme=yytext(); return DIGITO;}
 
  . {return ERROR;}

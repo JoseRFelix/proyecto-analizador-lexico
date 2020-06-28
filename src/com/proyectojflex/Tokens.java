@@ -9,5 +9,7 @@ public enum Tokens {
     DIGITO,
     ERROR,
     RESERVADAS,
-    NEWLINE
+    NEWLINE,
+    PARENTESIS,
+    POTENCIA
 }
