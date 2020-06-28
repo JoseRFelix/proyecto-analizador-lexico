@@ -1,4 +1,4 @@
-package proyectojflex;
+package com.proyectojflex;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
