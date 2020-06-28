@@ -663,7 +663,7 @@ class Lexer {
             // fall through
           case 17: break;
           case 8:
-            { lexeme=yytext(); return NUMERO;
+            { lexeme=yytext(); return DIGITO;
             }
             // fall through
           case 18: break;
